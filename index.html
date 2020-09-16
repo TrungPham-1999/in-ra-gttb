@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        var n = parseInt(prompt("Nhập vào n số phần từ của mảng : "));
+        var numbers = [];
+        var tong = 0;
+        var TB;
+        for (var i = 0; i < n; i++) {
+            numbers[i] = parseInt(prompt("Nhập vào phần tử thứ " + i));
+        }
+        let max = numbers[0];
+        for (var i = 0; i < numbers.length; i++) {
+            tong = tong + numbers[i];
+            if (max < numbers[i]) {
+                max = numbers[i];
+            }
+        }
+        TB = tong / (numbers.length);
+        document.write("Gía trị lớn nhất trong các phần tử là ", max);
+        document.write("</br>Trung bình các phần tử trong mảng là ", TB)
+    </script>
+</head>
+
+</html>
